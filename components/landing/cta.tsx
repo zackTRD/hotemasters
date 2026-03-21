@@ -50,7 +50,7 @@ export function CTA() {
           
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <a href="https://gumroad.com/checkout?_gl=1*12s6gao*_ga*OTM4ODA4NDgxLjE3NTI2NzM2NjY.*_ga_6LJN6D94N6*czE3NTI2NzM2NjYkbzEkZzAkdDE3NTI2NzM2NjYkajYwJGwwJGhw" target="_blank" rel="noopener noreferrer">
+            <a href="https://gumroad.com/checkout?_gl=1*17ckwf7*_ga*MTg1MTA0ODgyNS4xNzU1NjE2OTQ5*_ga_6LJN6D94N6*czE3NzQxMzUyNTQkbzUkZzEkdDE3NzQxMzU2MTMkajkkbDAkaDA." target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="w-full sm:w-auto gap-2 text-lg px-10 py-7 bg-primary hover:bg-primary/90">
                 <Download className="h-5 w-5" />
                 Obtenir mon Guide Airbnb
