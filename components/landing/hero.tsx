@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Star, Download, BookOpen } from "lucide-react"
@@ -26,10 +27,12 @@ export function Hero() {
             </p>
             
             <div className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start justify-center">
-              <Button size="lg" className="w-full sm:w-auto gap-2 text-base px-8 py-6">
-                <Download className="h-5 w-5" />
-                Acheter maintenant - 19,99€
-              </Button>
+              <a href="https://gumroad.com/checkout?_gl=1*17ckwf7*_ga*MTg1MTA0ODgyNS4xNzU1NjE2OTQ5*_ga_6LJN6D94N6*czE3NzQxMzUyNTQkbzUkZzEkdDE3NzQxMzU2MTMkajkkbDAkaDA." target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="w-full sm:w-auto gap-2 text-base px-8 py-6">
+                  <Download className="h-5 w-5" />
+                  Acheter maintenant - 19,99€
+                </Button>
+              </a>
               <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2 text-base px-8 py-6">
                 <BookOpen className="h-5 w-5" />
                 Lire un extrait gratuit
@@ -50,7 +53,7 @@ export function Hero() {
             </div>
           </div>
           
-          {/* Right Content - Book Mockup */}
+          {/* Right Content - Featured Image */}
           <div className="relative flex-1 flex justify-center lg:justify-end">
             <div className="relative">
               {/* Price Tag */}
@@ -61,41 +64,27 @@ export function Hero() {
                 </div>
               </div>
               
-              {/* Book Cover */}
-              <div className="relative h-[400px] w-[300px] md:h-[480px] md:w-[360px] rounded-lg bg-card shadow-2xl overflow-hidden border border-border">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/10" />
-                <div className="relative h-full w-full flex flex-col items-center justify-center p-8 text-center">
-                  {/* Airbnb-style icon */}
-                  <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                    <svg viewBox="0 0 24 24" className="h-10 w-10 text-primary" fill="currentColor">
-                      <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.5 17.5c-.5.8-1.1 1.5-1.9 1.9-.8.5-1.8.6-2.8.3-1-.3-2.1-1-3.2-2.2-1.1-1.2-2.4-3-4-5.3C4 9.9 3.2 8 3 6.9c-.3-1.1-.2-2 .3-2.8.5-.8 1.1-1.5 1.9-1.9.8-.5 1.8-.6 2.8-.3 1 .3 2.1 1 3.2 2.2 1.1 1.2 2.4 3 4 5.3 1.6 2.3 2.4 4.2 2.6 5.3.3 1.1.2 2-.3 2.8z"/>
-                    </svg>
-                  </div>
-                  
-                  <h2 className="mb-2 text-2xl font-bold text-foreground md:text-3xl">
+              {/* Main Image */}
+              <div className="relative h-[400px] w-[300px] md:h-[480px] md:w-[400px] rounded-2xl shadow-2xl overflow-hidden border border-border">
+                <Image
+                  src="https://images.pexels.com/photos/2029731/pexels-photo-2029731.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Chambre Airbnb élégante et accueillante"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                {/* Overlay with book info */}
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-card">
+                  <Badge className="mb-3 bg-primary text-primary-foreground border-0">
+                    Guide Complet
+                  </Badge>
+                  <h2 className="text-xl font-bold md:text-2xl mb-2">
                     Guide pour les Hôtes Airbnb
                   </h2>
-                  <p className="mb-6 text-muted-foreground">
-                    Le guide complet pour devenir Superhôte
+                  <p className="text-sm text-card/80">
+                    41 pages de conseils pratiques pour devenir Superhôte
                   </p>
-                  
-                  {/* Chapter icons */}
-                  <div className="grid grid-cols-3 gap-3">
-                    {["Superhôte", "Tarification", "Avis"].map((item) => (
-                      <div key={item} className="flex flex-col items-center gap-1">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/50">
-                          <Star className="h-5 w-5 text-foreground" />
-                        </div>
-                        <span className="text-xs text-muted-foreground">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  <div className="mt-auto pt-6">
-                    <Badge variant="secondary" className="bg-accent text-foreground">
-                      41 pages d&apos;expertise
-                    </Badge>
-                  </div>
                 </div>
               </div>
               
