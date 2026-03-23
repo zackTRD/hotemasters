@@ -1,5 +1,5 @@
+import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
-import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Star, Award, BookOpen, Users } from "lucide-react"
 
 export function Author() {
@@ -7,15 +7,16 @@ export function Author() {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
-          {/* Author Image */}
+          {/* Book Preview Image */}
           <div className="lg:w-1/3 flex justify-center">
             <div className="relative">
-              <div className="h-64 w-64 md:h-80 md:w-80 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/40 flex items-center justify-center">
-                <Avatar className="h-48 w-48 md:h-60 md:w-60">
-                  <AvatarFallback className="text-6xl md:text-7xl bg-primary/10 text-primary font-bold">
-                    ZB
-                  </AvatarFallback>
-                </Avatar>
+              <div className="relative h-[350px] w-[280px] md:h-[450px] md:w-[350px] rounded-xl overflow-hidden shadow-2xl">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-47Aikkc3ySizQs6mQWq1QwAk1CNHVf.png"
+                  alt="Guide pour les Hôtes Airbnb - Aperçu du livre"
+                  fill
+                  className="object-contain"
+                />
               </div>
               {/* Badge */}
               <div className="absolute -bottom-4 -right-4 flex items-center gap-2 rounded-full bg-card px-4 py-2 shadow-lg border border-border">

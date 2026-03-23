@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
@@ -9,7 +10,22 @@ export function CTA() {
   return (
     <section className="py-20 bg-foreground text-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Book Cover */}
+            <div className="lg:w-1/3 flex justify-center">
+              <div className="relative h-[300px] w-[220px] md:h-[400px] md:w-[280px] rounded-lg overflow-hidden shadow-2xl">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1.JPG-KGbjbdhjg3jRYRS2L0kqrELldxaPWx.jpeg"
+                  alt="Guide pour les Hôtes Airbnb - Couverture"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            
+            {/* CTA Content */}
+            <div className="lg:w-2/3 text-center lg:text-left">
           <Badge className="mb-6 bg-primary text-primary-foreground border-0">
             Offre de lancement
           </Badge>
@@ -18,13 +34,13 @@ export function CTA() {
             Prêt à faire exploser votre taux d&apos;occupation ?
           </h2>
           
-          <p className="text-lg text-background/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-background/80 mb-8 max-w-2xl mx-auto lg:mx-0">
             Rejoignez les centaines d&apos;hôtes qui ont transformé leur activité Airbnb. 
             Téléchargez votre guide maintenant et commencez à voir des résultats dès cette semaine.
           </p>
           
           {/* Price */}
-          <div className="flex items-center justify-center gap-4 mb-8">
+          <div className="flex items-center justify-center lg:justify-start gap-4 mb-8">
             <span className="text-2xl text-background/50 line-through">29,99€</span>
             <span className="text-5xl font-bold text-primary">19,99€</span>
             <Badge className="bg-accent text-foreground border-0">
@@ -33,7 +49,7 @@ export function CTA() {
           </div>
           
           {/* Features */}
-          <div className="flex flex-wrap justify-center gap-6 mb-10 text-sm">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-10 text-sm">
             <div className="flex items-center gap-2 text-background/90">
               <CheckCircle2 className="h-5 w-5 text-primary" />
               <span>41 pages de contenu</span>
@@ -49,7 +65,7 @@ export function CTA() {
           </div>
           
           {/* CTA Button */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8">
             <a href="https://gumroad.com/checkout?_gl=1*17ckwf7*_ga*MTg1MTA0ODgyNS4xNzU1NjE2OTQ5*_ga_6LJN6D94N6*czE3NzQxMzUyNTQkbzUkZzEkdDE3NzQxMzU2MTMkajkkbDAkaDA." target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="w-full sm:w-auto gap-2 text-lg px-10 py-7 bg-primary hover:bg-primary/90">
                 <Download className="h-5 w-5" />
@@ -59,7 +75,7 @@ export function CTA() {
           </div>
           
           {/* Trust Badges */}
-          <div className="flex flex-wrap justify-center gap-6 text-xs text-background/60">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-xs text-background/60">
             <div className="flex items-center gap-1">
               <ShieldCheck className="h-4 w-4" />
               <span>Paiement sécurisé</span>
@@ -67,6 +83,8 @@ export function CTA() {
             <div className="flex items-center gap-1">
               <CreditCard className="h-4 w-4" />
               <span>Visa / Mastercard / PayPal</span>
+            </div>
+          </div>
             </div>
           </div>
         </div>

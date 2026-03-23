@@ -53,39 +53,26 @@ export function Hero() {
             </div>
           </div>
           
-          {/* Right Content - Featured Image */}
+          {/* Right Content - Featured E-book Image */}
           <div className="relative flex-1 flex justify-center lg:justify-end">
             <div className="relative">
               {/* Price Tag */}
-              <div className="absolute -left-4 -top-4 z-10 flex h-20 w-20 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg">
+              <div className="absolute -left-4 -top-4 z-20 flex h-20 w-20 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg">
                 <div className="text-center">
                   <span className="text-xs font-medium">Seulement</span>
                   <div className="text-xl font-bold">19,99€</div>
                 </div>
               </div>
               
-              {/* Main Image */}
-              <div className="relative h-[400px] w-[300px] md:h-[480px] md:w-[400px] rounded-2xl shadow-2xl overflow-hidden border border-border">
+              {/* Main E-book Promotional Image */}
+              <div className="relative h-[400px] w-[350px] md:h-[500px] md:w-[500px] rounded-2xl overflow-hidden">
                 <Image
-                  src="https://images.pexels.com/photos/2029731/pexels-photo-2029731.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="Chambre Airbnb élégante et accueillante"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-BAuYp4pEQEb6j3owpDqcGdAU4dsAR0.png"
+                  alt="Guide pour les Hôtes Airbnb - E-book et Audiobook"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   priority
                 />
-                {/* Overlay with book info */}
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-card">
-                  <Badge className="mb-3 bg-primary text-primary-foreground border-0">
-                    Guide Complet
-                  </Badge>
-                  <h2 className="text-xl font-bold md:text-2xl mb-2">
-                    Guide pour les Hôtes Airbnb
-                  </h2>
-                  <p className="text-sm text-card/80">
-                    41 pages de conseils pratiques pour devenir Superhôte
-                  </p>
-                </div>
               </div>
               
               {/* Superhost Badge */}
