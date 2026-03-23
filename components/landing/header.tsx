@@ -71,10 +71,10 @@ export function Header() {
                     {item.label}
                   </Link>
                 ))}
-                <Button className="mt-4 gap-2">
+                {/* <Button className="mt-4 gap-2">
                   <Download className="h-4 w-4" />
                   Télécharger
-                </Button>
+                </Button> */}
               </nav>
             </SheetContent>
           </Sheet>
