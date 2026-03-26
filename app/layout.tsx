@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import './globals.css'
+import '../styles/globals.css'
 
 const plusJakarta = Plus_Jakarta_Sans({ 
   subsets: ["latin"],
