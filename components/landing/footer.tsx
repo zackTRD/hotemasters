@@ -7,8 +7,8 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo & Copyright */}
-          <div className="flex items-center gap-3">
-            <div className="relative h-10 w-10">
+          <div className="flex items-center gap-4">
+            <div className="relative h-16 w-16">
               <Image
                 src="/logo.png"
                 alt="HOTEMASTER Logo"
