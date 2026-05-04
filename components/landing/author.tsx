@@ -33,11 +33,11 @@ export function Author() {
             </Badge>
             
             <h2 className="text-3xl font-bold text-foreground md:text-4xl mb-2">
-              Bonjour, je suis Zack Bonnet
+              Bienvenue chez HOTEMASTER
             </h2>
             
             <p className="text-lg text-primary font-medium mb-6">
-              Expert en gestion locative et Superhôte certifié
+              Votre partenaire pour réussir sur Airbnb
             </p>
             
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
@@ -73,7 +73,7 @@ export function Author() {
             
             {/* Signature */}
             <div className="mt-8">
-              <p className="text-2xl font-script italic text-primary">Zack Bonnet</p>
+              <p className="text-2xl font-bold text-primary">HOTEMASTER</p>
             </div>
           </div>
         </div>

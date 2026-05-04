@@ -13,7 +13,7 @@ export function Footer() {
               </svg>
             </div>
             <span className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Zack Bonnet. Tous droits réservés.
+              © {new Date().getFullYear()} HOTEMASTER. Tous droits réservés.
             </span>
           </div>
 
