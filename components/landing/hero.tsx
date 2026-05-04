@@ -67,7 +67,7 @@ export function Hero() {
               {/* Main E-book Promotional Image */}
               <div className="relative h-[400px] w-[350px] md:h-[500px] md:w-[500px] rounded-2xl overflow-hidden">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-BAuYp4pEQEb6j3owpDqcGdAU4dsAR0.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%204%20mai%202026%2C%2022_19_56-oLWSFzYbiQ1bRtmQKZDOsjXZkdR2z4.png"
                   alt="Guide pour les Hôtes Airbnb - E-book et Audiobook"
                   fill
                   className="object-contain"

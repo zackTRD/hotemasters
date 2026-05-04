@@ -16,7 +16,7 @@ export function CTA() {
             <div className="lg:w-1/3 flex justify-center">
               <div className="relative h-[300px] w-[220px] md:h-[400px] md:w-[280px] rounded-lg overflow-hidden shadow-2xl">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1.JPG-KGbjbdhjg3jRYRS2L0kqrELldxaPWx.jpeg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%204%20mai%202026%2C%2022_19_56-oLWSFzYbiQ1bRtmQKZDOsjXZkdR2z4.png"
                   alt="Guide pour les Hôtes Airbnb - Couverture"
                   fill
                   className="object-cover"

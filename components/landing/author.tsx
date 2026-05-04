@@ -12,7 +12,7 @@ export function Author() {
             <div className="relative">
               <div className="relative h-[350px] w-[280px] md:h-[450px] md:w-[350px] rounded-xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-47Aikkc3ySizQs6mQWq1QwAk1CNHVf.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%204%20mai%202026%2C%2022_19_56-oLWSFzYbiQ1bRtmQKZDOsjXZkdR2z4.png"
                   alt="Guide pour les Hôtes Airbnb - Aperçu du livre"
                   fill
                   className="object-contain"
