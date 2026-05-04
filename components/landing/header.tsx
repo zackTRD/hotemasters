@@ -1,10 +1,11 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Download } from "lucide-react"
+import { Menu } from "lucide-react"
 
 const navItems = [
   { label: "Sommaire", href: "#sommaire" },
@@ -22,12 +23,15 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-              <svg viewBox="0 0 24 24" className="h-5 w-5 text-primary-foreground" fill="currentColor">
-                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.5 17.5c-.5.8-1.1 1.5-1.9 1.9-.8.5-1.8.6-2.8.3-1-.3-2.1-1-3.2-2.2-1.1-1.2-2.4-3-4-5.3C4 9.9 3.2 8 3 6.9c-.3-1.1-.2-2 .3-2.8.5-.8 1.1-1.5 1.9-1.9.8-.5 1.8-.6 2.8-.3 1 .3 2.1 1 3.2 2.2 1.1 1.2 2.4 3 4 5.3 1.6 2.3 2.4 4.2 2.6 5.3.3 1.1.2 2-.3 2.8z" />
-              </svg>
+            <div className="relative h-10 w-10">
+              <Image
+                src="/logo.png"
+                alt="HOTEMASTER Logo"
+                fill
+                className="object-contain"
+              />
             </div>
-            <span className="font-bold text-foreground hidden sm:inline">Guide Hôtes Airbnb</span>
+            <span className="font-bold text-foreground hidden sm:inline text-lg">HOTEMASTER</span>
           </Link>
 
           {/* Desktop Navigation */}
