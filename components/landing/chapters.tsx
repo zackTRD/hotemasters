@@ -100,7 +100,7 @@ export function Chapters() {
                   <CheckCircle2 className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Mise à jour 2024</p>
+                  <p className="font-semibold text-foreground">Mise à jour 2026</p>
                   <p className="text-sm text-muted-foreground">Dernières stratégies Airbnb</p>
                 </div>
               </div>
