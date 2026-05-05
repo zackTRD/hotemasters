@@ -23,7 +23,7 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="relative h-14 w-14">
+            <div className="relative h-20 w-20">
               <Image
                 src="/logo.png"
                 alt="HOTEMASTER Logo"
@@ -31,7 +31,6 @@ export function Header() {
                 className="object-contain"
               />
             </div>
-            <span className="font-bold text-foreground hidden sm:inline text-lg">HOTEMASTER</span>
           </Link>
 
           {/* Desktop Navigation */}
