@@ -12,7 +12,7 @@ export function Author() {
             <div className="relative">
               <div className="relative h-[350px] w-[280px] md:h-[450px] md:w-[350px] rounded-xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-47Aikkc3ySizQs6mQWq1QwAk1CNHVf.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%204%20mai%202026%2C%2022_19_56-oLWSFzYbiQ1bRtmQKZDOsjXZkdR2z4.png"
                   alt="Guide pour les Hôtes Airbnb - Aperçu du livre"
                   fill
                   className="object-contain"
@@ -33,11 +33,11 @@ export function Author() {
             </Badge>
             
             <h2 className="text-3xl font-bold text-foreground md:text-4xl mb-2">
-              Bonjour, je suis Zack Bonnet
+              Bienvenue chez HOTEMASTER
             </h2>
             
             <p className="text-lg text-primary font-medium mb-6">
-              Expert en gestion locative et Superhôte certifié
+              Votre partenaire pour réussir sur Airbnb
             </p>
             
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
@@ -73,7 +73,7 @@ export function Author() {
             
             {/* Signature */}
             <div className="mt-8">
-              <p className="text-2xl font-script italic text-primary">Zack Bonnet</p>
+              <p className="text-2xl font-bold text-primary">HOTEMASTER</p>
             </div>
           </div>
         </div>
