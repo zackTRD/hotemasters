@@ -4,9 +4,22 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
-import { Download, CheckCircle2, ShieldCheck, CreditCard } from "lucide-react"
+import { Download, CheckCircle2, ShieldCheck, CreditCard, Loader2 } from "lucide-react"
+import { useActionState, useEffect } from "react"
+import { subscribeToEbook } from "@/lib/actions/ebook"
+import { toast } from "sonner"
 
 export function CTA() {
+  const [state, action, isPending] = useActionState(subscribeToEbook, null)
+
+  useEffect(() => {
+    if (state?.success) {
+      toast.success("C'est envoyé ! Vérifiez votre boîte mail.")
+    } else if (state?.error) {
+      toast.error(state.error)
+    }
+  }, [state])
+
   return (
     <section className="py-20 bg-foreground text-background">
       <div className="container mx-auto px-4">
@@ -98,14 +111,28 @@ export function CTA() {
             <p className="text-background/70 text-center mb-6 text-sm">
               Entrez votre email pour recevoir le premier chapitre gratuitement
             </p>
-            <form className="flex flex-col sm:flex-row gap-3">
+            <form action={action} className="flex flex-col sm:flex-row gap-3">
               <Input 
+                name="email"
                 type="email" 
                 placeholder="votre@email.com"
                 className="flex-1 bg-background text-foreground border-0 h-12"
+                required
+                disabled={isPending}
               />
-              <Button type="submit" className="h-12 px-6 bg-primary hover:bg-primary/90">
-                Recevoir le chapitre
+              <Button 
+                type="submit" 
+                className="h-12 px-6 bg-primary hover:bg-primary/90 min-w-[180px]"
+                disabled={isPending}
+              >
+                {isPending ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Envoi en cours...
+                  </>
+                ) : (
+                  "Recevoir le chapitre"
+                )}
               </Button>
             </form>
           </div>
